@@ -1,31 +1,19 @@
-import React from "react";
-import "./style.css";
+//  {} curly braces import me tab lagate h jab hum sirf export kiye rhte h
 
-export default function App() {
-  return (
 
-    
-    <div>
+// import {hello,data} from './sell.js';
+// hello();
+// console.log(data);
 
-      
-      {/* <h1>Hello world!......</h1>
-      <p>Start editing to see some magic happen :)</p>
-       */}
 
-       {/* <h1>
-         Movie playlist..
-       </h1>
-       <p>Here are some movie playlist--</p>
-       <ul>
-         <li>ZINDAGI NA MILEGI DOOBARA</li>
-       <li>VEER ZARA</li>
-       <li>DOR</li>
-       <li>ROCKSTAR</li>
-       <li>GANGU BAI</li>
-       </ul> */}
+// or
+import * as bundle from './sell.js';
 
-      
-      
-    </div>
-  );
-}
+bundle.hello();
+console.log(bundle.data);
+
+// direct object/array /function ka naam import krenge jab export default use kiye ho to.
+// customer.js
+
+import person from './customer.js';
+console.log(person);
