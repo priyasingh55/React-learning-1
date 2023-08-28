@@ -20,21 +20,17 @@
 
 
 import React,{useState} from "react";
+import Exp_useState from './Hooks/use_state';
 
-const Result= ()=>{
-  const [marks, setMarks]= useState(80);
-  const [name, setName]=useState("priya");
+const App= ()=>{
+  
   return(
     <>
-    <h1>My marks is {marks}</h1>
-    <h2>My name is {name}</h2>
-    <button onClick={()=>{
-      setMarks(85)
-      setName("Vishal")
+    
 
-    }}> Update</button>
+<Exp_useState />
     
     </>
   )
 }
-export default Result;
+export default App;
